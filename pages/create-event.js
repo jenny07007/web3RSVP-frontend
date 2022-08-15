@@ -67,7 +67,7 @@ export default function CreateEvent() {
       let eventTimestamp = eventDateAndTime.getTime();
       let eventDataCID = cid;
 
-      const txn = await rsvpContract.createEvent(
+      const txn = await rsvpContract.createNewEvent(
         eventTimestamp,
         deposit,
         maxCapacity,
@@ -140,6 +140,7 @@ export default function CreateEvent() {
             Create your virtual event
           </h1>
         )}
+
         {account && !success && (
           <form
             onSubmit={handleSubmit}
