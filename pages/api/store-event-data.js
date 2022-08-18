@@ -26,14 +26,22 @@ async function storeEventData(req, res) {
   }
 }
 
+// the cid will be stored on-chain and be used to retrieve our files
+async function storeFiles(files) {
+  const client = makeStorageClient();
+  const cid = await client.put(files);
+  return cid;
+}
+
 //  upload files
 async function makeFileObjects(body) {
   const buffer = Buffer.from(JSON.stringify(body));
 
-  const imageDirectory = resolve(process.cwd());
+  const imageDirectory = resolve(process.cwd(), `public/images/${body.image}`);
   const files = await getFilesFromPath(imageDirectory);
 
   files.push(new File([buffer], "data.json"));
+  console.log(files);
   return files;
 }
 
@@ -42,11 +50,4 @@ function makeStorageClient() {
   return new Web3Storage({
     token: process.env.WEB3STORAGE_TOKEN,
   });
-}
-
-// the cid will be stored on-chain and be used to retrieve our files
-async function storeFiles(files) {
-  const client = makeStorageClient();
-  const cid = await client.put(files);
-  return cid;
 }
