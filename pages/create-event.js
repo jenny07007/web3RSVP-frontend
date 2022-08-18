@@ -30,7 +30,7 @@ export default function CreateEvent() {
 
     const body = {
       name: eventName,
-      desciption: eventDescription,
+      description: eventDescription,
       link: eventLink,
       image: getRandomImage(),
     };

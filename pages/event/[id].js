@@ -1,3 +1,4 @@
+import { gql } from "@apollo/client";
 import Head from "next/head";
 import Image from "next/image";
 import {
@@ -7,7 +8,6 @@ import {
   LinkIcon,
 } from "@heroicons/react/outline";
 
-import { gql } from "@apollo/client";
 import client from "../../apollo-client";
 import formatTimestamp from "../../utils/formatTimestamp";
 
