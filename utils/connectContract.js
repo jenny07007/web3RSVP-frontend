@@ -2,7 +2,7 @@ import abiJSON from "./Web3RSVP.json";
 import { ethers } from "ethers";
 
 function connectContract() {
-  const contractAddress = "0x86798d822372BF8bD37947756AA24F1a3Ffb6aCc";
+  const contractAddress = "0x16D7cAB0B95D8A1812bE7aa2940c0001474c7211";
   const contractABI = abiJSON.abi;
   let rsvpContract;
 
