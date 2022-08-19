@@ -9,7 +9,14 @@ export default function EventCard({ id, name, eventTimestamp, imageURL }) {
         <a className="clickable-card__link"></a>
       </Link>
       <div className="block w-full aspect-w-10 aspect-h-7 rounded-lg bg-gray-100 overflow-hidden relative group-hover:opacity-75">
-        {imageURL && <Image src={imageURL} alt="event image" layout="fill" />}
+        {imageURL && (
+          <Image
+            src={imageURL}
+            alt="event image"
+            layout="fill"
+            priority="true"
+          />
+        )}
       </div>
       <p className="mt-2 block text-sm text-gray-500">
         {formatTimestamp(eventTimestamp)}
