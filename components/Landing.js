@@ -2,7 +2,7 @@ import Head from "next/head";
 
 export default function Landing({ children }) {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
       <Head>
         <title>web3rsvp</title>
         <meta
@@ -10,9 +10,9 @@ export default function Landing({ children }) {
           content="Find, join, and create virtual events with your web3 frens"
         />
       </Head>
-      <section className="py-12">
+      <section className="py-12 ">
         <div className="w-full md:w-8/12 text-left">
-          <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
+          <h1 className="text-4xl tracking-tight font-extrabold dark:text-gray-200 text-gray-900 sm:text-5xl md:text-6xl">
             <span>Discover what&apos;s happening in the </span>
             <span className="text-indigo-600">metaverse</span>
           </h1>

@@ -101,7 +101,7 @@ function Event({ event }) {
         )}
 
         <h6 className="mb-2">{formatTimestamp(event.eventTimestamp)}</h6>
-        <h1 className="text-3xl tracking-tight font-extrabold text-gray-900 sm:text-4xl md:text-5xl mb-6 lg:mb-12">
+        <h1 className="text-3xl tracking-tight font-extrabold text-gray-900 dark:text-indigo-500 sm:text-4xl md:text-5xl mb-6 lg:mb-12">
           {event.name}
         </h1>
         <div className="flex flex-wrap-reverse lg:flex-nowrap">
@@ -124,7 +124,7 @@ function Event({ event }) {
                     <div className="flex item-center">
                       <LinkIcon className="w-6 mr-2 text-indigo-800" />
                       <a
-                        className="text-indigo-800 truncate hover:underline"
+                        className="text-indigo-800truncate hover:underline"
                         href={event.link}
                       >
                         {event.link}
@@ -161,7 +161,7 @@ function Event({ event }) {
               <span className="truncate">
                 Hosted by{" "}
                 <a
-                  className="text-indigo-800 truncate hover:underline"
+                  className="text-indigo-800 dark:text-blue-500 truncate hover:underline"
                   href={`${process.env.NEXT_PUBLIC_TESTNET_EXPLORER_URL}address/${event.eventOwner}`}
                   target="_blank"
                   rel="noreferrer"

@@ -9,7 +9,6 @@ import DashboardNav from "../../../components/DashboardNav";
 import connectContract from "../../../utils/connectContract";
 import formatTimestamp from "../../../utils/formatTimestamp";
 import Alert from "../../../components/Alert";
-import { data } from "autoprefixer";
 
 function PastEvent(event) {
   const { data: account } = useAccount();
