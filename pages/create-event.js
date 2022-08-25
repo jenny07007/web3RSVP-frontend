@@ -150,7 +150,7 @@ export default function CreateEvent() {
               <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:pt-5">
                 <label
                   htmlFor="eventname"
-                  className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+                  className="block text-sm font-medium dark:text-indigo-500 text-gray-700 sm:mt-px sm:pt-2"
                 >
                   Event name
                 </label>
@@ -159,7 +159,7 @@ export default function CreateEvent() {
                     id="event-name"
                     name="event-name"
                     type="text"
-                    className="block max-w-lg w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border border-gray-300 rounded-md"
+                    className="block max-w-lg w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border border-gray-300 rounded-md dark:text-zinc-900"
                     required
                     value={eventName}
                     onChange={(e) => setEventName(e.target.value)}
@@ -170,7 +170,7 @@ export default function CreateEvent() {
               <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:pt-5">
                 <label
                   htmlFor="date"
-                  className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+                  className="block text-sm font-medium text-gray-700 dark:text-indigo-500 sm:mt-px sm:pt-2"
                 >
                   Date & time
                   <p className="mt-1 max-w-2xl text-sm text-gray-400">
@@ -183,7 +183,7 @@ export default function CreateEvent() {
                       id="date"
                       name="date"
                       type="date"
-                      className="max-w-lg block focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm sm:max-w-xs sm:text-sm border border-gray-300 rounded-md"
+                      className="dark:text-zinc-900 max-w-lg block focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm sm:max-w-xs sm:text-sm border border-gray-300 rounded-md"
                       required
                       value={eventDate}
                       onChange={(e) => setEventDate(e.target.value)}
@@ -194,7 +194,7 @@ export default function CreateEvent() {
                       id="time"
                       name="time"
                       type="time"
-                      className="max-w-lg block focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm sm:max-w-xs sm:text-sm border border-gray-300 rounded-md"
+                      className="dark:text-zinc-900 max-w-lg block focus:ring-indigo-500 focus:border-indigo-500 w-full shadow-sm sm:max-w-xs sm:text-sm border border-gray-300 rounded-md"
                       required
                       value={eventTime}
                       onChange={(e) => setEventTime(e.target.value)}
@@ -206,7 +206,7 @@ export default function CreateEvent() {
               <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:pt-5">
                 <label
                   htmlFor="max-capacity"
-                  className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+                  className="block text-sm font-medium text-gray-700 dark:text-indigo-500 sm:mt-px sm:pt-2"
                 >
                   Max capacity
                   <p className="mt-1 max-w-2xl text-sm text-gray-400">
@@ -220,7 +220,7 @@ export default function CreateEvent() {
                     id="max-capacity"
                     min="1"
                     placeholder="100"
-                    className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border border-gray-300 rounded-md"
+                    className="dark:text-zinc-900 max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border border-gray-300 rounded-md"
                     value={maxCapacity}
                     onChange={(e) => setMaxCapacity(e.target.value)}
                   />
@@ -230,7 +230,7 @@ export default function CreateEvent() {
               <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:pt-5">
                 <label
                   htmlFor="refundable-deposit"
-                  className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+                  className="block text-sm font-medium text-gray-700 dark:text-indigo-500 sm:mt-px sm:pt-2"
                 >
                   Refundable deposit
                   <p className="mt-1 max-w-2xl text-sm text-gray-400">
@@ -247,7 +247,7 @@ export default function CreateEvent() {
                     step="any"
                     inputMode="decimal"
                     placeholder="0.00"
-                    className="max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border border-gray-300 rounded-md"
+                    className="dark:text-zinc-900 max-w-lg block w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:max-w-xs sm:text-sm border border-gray-300 rounded-md"
                     value={refund}
                     onChange={(e) => setRefund(e.target.value)}
                   />
@@ -257,7 +257,7 @@ export default function CreateEvent() {
               <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:pt-5">
                 <label
                   htmlFor="event-link"
-                  className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+                  className="block text-sm font-medium text-gray-700 dark:text-indigo-500 sm:mt-px sm:pt-2"
                 >
                   Event link
                   <p className="mt-1 max-w-2xl text-sm text-gray-400">
@@ -269,7 +269,7 @@ export default function CreateEvent() {
                     id="event-link"
                     name="event-link"
                     type="text"
-                    className="block max-w-lg w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border border-gray-300 rounded-md"
+                    className="dark:text-zinc-900 block max-w-lg w-full shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border border-gray-300 rounded-md"
                     required
                     value={eventLink}
                     onChange={(e) => setEventLink(e.target.value)}
@@ -279,7 +279,7 @@ export default function CreateEvent() {
               <div className="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:pt-5">
                 <label
                   htmlFor="about"
-                  className="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2"
+                  className="block text-sm font-medium text-gray-700 dark:text-indigo-500 sm:mt-px sm:pt-2"
                 >
                   Event description
                   <p className="mt-2 text-sm text-gray-400">
@@ -291,7 +291,7 @@ export default function CreateEvent() {
                     id="about"
                     name="about"
                     rows={10}
-                    className="max-w-lg shadow-sm block w-full focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border border-gray-300 rounded-md"
+                    className="dark:text-zinc-900 max-w-lg shadow-sm block w-full focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm border border-gray-300 rounded-md"
                     value={eventDescription}
                     onChange={(e) => setEventDescription(e.target.value)}
                   />
@@ -318,7 +318,7 @@ export default function CreateEvent() {
         {success && eventID && (
           <div>
             Success! Please wait a few minutes, then check out your event page{" "}
-            <span className="font-bold">
+            <span className="font-bold dark:text-indigo-500 underline">
               <Link href={`/event/${eventID}`}>here</Link>
             </span>
           </div>
