@@ -12,6 +12,7 @@ import Alert from "../components/Alert";
 
 export default function CreateEvent() {
   const { data: account } = useAccount();
+
   const [success, setSuccess] = useState(null);
   const [message, setMessage] = useState(null);
   const [loading, setLoading] = useState(null);

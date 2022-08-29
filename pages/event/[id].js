@@ -21,6 +21,7 @@ function Event({ event }) {
   console.log("EVENT:", event);
 
   const { data: account } = useAccount();
+
   const [success, setSuccess] = useState(null);
   const [message, setMessage] = useState(null);
   const [loading, setLoading] = useState(null);
@@ -150,7 +151,7 @@ function Event({ event }) {
             )}
             <div className="flex item-center">
               <UsersIcon className="w-6 mr-2" />
-              <span className="truncate"># attending</span>
+              <span className="truncate">{event.totalRSVPs} attending</span>
             </div>
             <div className="flex item-center">
               <TicketIcon className="w-6 mr-2" />
